@@ -1,0 +1,73 @@
+package cursada_progra_inicio;
+import java.util.Scanner;
+
+public class Ejercicio {
+
+	
+	public static void imprimirFecha(int dia, int mes, int anio) {		
+		String smes = "";
+		switch (mes) {
+		case 1:
+			smes = "Enero";
+			break;
+		case 2:
+			smes = "Febrero";
+			break;
+		case 3:
+			smes = "Marzo";
+			break;
+		case 4:
+			smes = "Abril";
+			break;
+		case 5:
+			smes = "Mayo";
+			break;
+		case 6:
+			smes = "Junio";
+			break;
+		case 7:
+			smes = "Julio";
+			break;
+		case 8:
+			smes = "Agosto";
+			break;
+		case 9:
+			smes = "Septiembre";
+			break;
+		case 10:
+			smes = "oCtubre";
+			break;
+		case 11:
+			smes = "Nobiembre";
+			break;
+		case 12:
+			smes = "Diziembre";
+			break;
+		}
+				System.out.println(dia + " de " + smes + " de " + anio);
+
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		Scanner n1 = new Scanner(System.in);
+		System.out.println("Dia");
+		Scanner n2 = new Scanner(System.in);
+		System.out.println("Mes");
+		Scanner n3 = new Scanner(System.in);
+		System.out.println("Anio");
+		
+		int dia = n1.nextInt();
+		int mes = n2.nextInt();
+		int anio =n3.nextInt();
+		
+		imprimirFecha(dia,mes,anio);
+		
+		n1.close();
+		n2.close();
+		n3.close();
+	}
+
+}
