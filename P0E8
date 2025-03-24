@@ -1,0 +1,32 @@
+package cursada_progra_inicio;
+import java.util.Scanner;
+
+public class Ejercicio {
+
+	
+	public static void ponerNota(double a, double b) {		
+		double c = (a + b) /2 ;
+			if (c >= 7) {
+				System.out.println("Aprobado");
+			} else System.out.println("Desaprobado");
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		Scanner n1 = new Scanner(System.in);
+		System.out.println("Decime un numero");
+		Scanner n2 = new Scanner(System.in);
+		System.out.println("Decime otro numero");
+		
+		double a = n1.nextDouble();
+		double b = n2.nextDouble();
+		
+		ponerNota(a,b);
+		
+		n1.close();
+		n2.close();
+	}
+
+}
