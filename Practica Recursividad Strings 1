@@ -1,0 +1,32 @@
+package cursada_progra_inicio;
+import java.util.Scanner;
+
+
+public class Ejercicio {
+
+	
+	public static String resto(String s) {		
+		String str = "";
+		for (int i = 1; i < s.length();i++ ) {
+			str = str + s.charAt(i);
+		}return str;
+		
+	}
+	
+	
+	public static void printEspaciado (String s) {
+		if (s.length() < 1) {
+			System.out.println(s);
+		}else {
+			String a = s.charAt(0) + "_";
+			System.out.print(a);
+			printEspaciado(resto(s));
+		}
+	}
+	
+
+
+	public static void main(String[] args) {
+		printEspaciado("HOLA");
+}
+}
